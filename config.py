@@ -99,6 +99,15 @@ if __cfg__.DETECT_OBJECT == 'Car':
     __cfg__.RPN_POS_IOU = 0.6
     __cfg__.RPN_NEG_IOU = 0.45
 
+elif __cfg__.DETECT_OBJECT == 'Box':
+    # box anchor
+    __cfg__.ANCHOR_L = 3.9
+    __cfg__.ANCHOR_W = 1.6
+    __cfg__.ANCHOR_H = 1.56
+    __cfg__.ANCHOR_Z = -1.0 - __cfg__.ANCHOR_H/2
+    __cfg__.RPN_POS_IOU = 0.6
+    __cfg__.RPN_NEG_IOU = 0.45
+
 elif __cfg__.DETECT_OBJECT == 'Pedestrian':
     # pedestrian anchor
     __cfg__.ANCHOR_L = 0.8
