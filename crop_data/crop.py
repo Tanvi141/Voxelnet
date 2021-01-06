@@ -83,7 +83,9 @@ IMG_ROOT = '/media/hdc/KITTI/image/training/image_2/'
 PC_ROOT = '/media/hdc/KITTI/point_cloud/raw_bin_files/training/velodyne/'
 CALIB_ROOT = '/media/hdc/KITTI/calib/data_object_calib/training/calib/'
 
-
+IMG_ROOT = '/content/gdrive/MyDrive/training/image_2/'
+PC_ROOT = '/content/gdrive/MyDrive/training/velodyne/'
+CALIB_ROOT = '/content/gdrive/MyDrive/training/calib/'
 
 for frame in range(0, 7481):
     img_dir = IMG_ROOT + '%06d.png' % frame
